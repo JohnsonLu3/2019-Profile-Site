@@ -1,16 +1,30 @@
 <div class="card">
+    
     <div class="image-container">
         <img src={{imgPath}}>
     </div>
     <a href="#">
         <h1>{{title}}</h1>
     </a>
-    <p>{{desc}}</p>
+
+<span class="external-links">
+        <button class="src-btn trans-btn">
+            <i class="fas fa-code"></i>
+            <span class="sc-rd-only">View source</span>
+        </button>
+
+        <button class="site-btn trans-btn">
+            <i class="fas fa-external-link-alt"></i>
+            <span class="sc-rd-only">Visit Site</span>
+        </button>
+    </span>
+
+    <p tabindex="0">{{desc}}</p>
 
 
-    <div class="row">
+    <div class="row" role="group" tabindex="0" aria-label="This project uses">
         <div class="col" *ngFor="let chip of filters">
-            <app-filter-chip filter={{chip}}></app-filter-chip>
+            <app-filter-chip tabindex="0" filter={{chip}}></app-filter-chip>
         </div>
     </div>
 </div>
