@@ -22,6 +22,7 @@ export class SidenavComponent implements OnInit {
     
     this.dismissBtn.addEventListener("click", function(){
         document.getElementById("sidenav").classList.add("close");
+        document.getElementById("dim").classList.remove("dimOn");
     });
   }
 

@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
     this.navOpener = document.getElementById("openSideNav");
     this.navOpener.addEventListener("click", function(){
         document.getElementById("sidenav").classList.remove("close");
+        document.getElementById("dim").classList.add("dimOn");
         document.getElementById("sidenav").focus();
     });
   }

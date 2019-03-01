@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+    dim;
+
   constructor() { }
 
   ngOnInit() {
+    
+    this.dim = document.getElementById("dim");
+    this.dim.addEventListener("click", function(){
+            document.getElementById("sidenav").classList.add("close");
+            document.getElementById("dim").classList.remove("dimOn");
+        });
   }
 
 }

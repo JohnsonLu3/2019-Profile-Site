@@ -1,10 +1,12 @@
 @import "../../assets/color.scss";
 
 .headerbar{
-    background-image: linear-gradient( rgba(black,.1), rgba($grey,.1));
-    background-color: $off-black;
-    color: white;
-    text-align: center;
+//    background-image: linear-gradient( rgba(black,.1), rgba($grey,.1));
+//    background-color: $off-black;
+//    color: white;
+    width: 65%;
+    margin: auto;
+    text-align: left;
 
     h1{
         font-size: 2.5rem;
